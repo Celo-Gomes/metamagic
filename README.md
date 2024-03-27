@@ -1,4 +1,4 @@
-<h1 align="center"> Meta MAgic </h1>
+<h1 align="center"> Meta Magic </h1>
 
 <p align="center">
 Meu 1° projeto. Idealizado a partir de um truque de mágica, e colocado em um programa.
@@ -33,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Meta Magic é um projeto recreativo, onde através de matemática, executa-se um truque de mágica com cartas.<br>
 Consiste em ecolha de uma "carta" pelo usuário, simbolizada por alguns nipes do baralho, que será descoberta pelo mágico virtual.<br>
-Claro, também utilzada um pouco de "teatro" nos enunciados do aplicativo para deixar um ambiente mistico.<br>
+Claro, também utilzado um pouco de "teatro" nos enunciados do aplicativo para deixar o ambiente mais mistico.<br>
 
 [Visite o projeto online](https://celo-gomes.github.io/metamagic)
 
