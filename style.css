@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:  rgb(24, 23, 23); 
+    font: normal 15pt Arial;
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+header, section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    opacity: 0;
+    margin-top: -300px;
+    position: relative;
+    z-index: 2;
+}
+header h1, section h1{
+    margin: 20px 0 20px 0;
+    font-family: "Rubik Scribble", system-ui;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: 7px 7px rgb(143, 142, 142);
+    color: antiquewhite;
+}
+#shake{
+    display: block;
+    width: 300px;
+    text-align: center;
+}
+header div{ 
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 7px 5px 5px rgba(168, 157, 157, 0.897);
+}
+header #intro{
+    background-color: rgb(24, 23, 23);
+    border: dotted 2px antiquewhite;
+    color: antiquewhite;
+}
+header #anima{
+    height: 40px;
+    background-color: antiquewhite;
+    cursor: pointer;
+    z-index: 3;
+}
+header #anima p{
+    position: relative;
+    white-space: nowrap;
+    animation: anima 14s linear infinite;    
+}
+@keyframes anima{
+    from{
+        left:100%;
+    }
+    to{
+        left:-260%;
+    }
+}
+section #display{
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+    box-shadow: 7px 5px 5px rgba(168, 157, 157, 0.897);
+    padding: 20px;
+}
+#deck1, #deck2, #deck3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    box-shadow: 3px 3px 7px;
+    margin: 10px;
+    font-family: "Rakkas", serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 5px;
+}
+#deck1:hover, #deck2:hover, #deck3:hover{
+    background-color: white;
+}
+b{color: red;}
+
+#radio1, #radio2, #radio3{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    transition: transform 1s ease-out;
+}
+#radio1:checked, #radio2:checked, #radio3:checked{
+    transform: rotateY(360deg);
+}
+#sentence, #rules{
+    margin: 10px;
+    font-size: 18px;
+    opacity: .6;
+}
+#solution{
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-family: "Rakkas", serif;
+    font-size: 60pt;
+    opacity: 0;
+    transition: 8s ease-in-out 2s; 
+}
+#button{
+    margin: 15px 0px 0px 10px;
+    /* margin-bottom: -10px; */
+    font-family: "Cinzel", serif;
+    font-weight: bolder;
+    font-family: 15px;
+    border: 2px black solid;
+    box-shadow: 5px 5px 7px;
+    cursor: pointer;
+    padding: 0 5px 0 5px;
+    transition: transform .7s;
+}
+#button:hover{
+    transform: scale(1.2);
+}
+img{
+    width:15rem;
+    position: absolute;
+    left: 50%;
+    top: 42%;
+    transform: translate(-50%,-50%);    
+    z-index: 1;
+    display:inline-block;
+    opacity: 0;
+}
+footer{
+    color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: -60%;
+    font-style: italic;
+    font-size: 14px;
+    opacity: .5;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+@media(min-width: 700px){
+    footer{
+        margin-left: -70rem;
+    }
+    @keyframes anima{
+        from{
+            left:70rem;
+        }
+        to{
+            left:-50rem;
+        }
+    }
+}
+
+.tremor {
+    animation: tremor 0.5s infinite;
+  }
+@keyframes tremor {
+        0%, 100% { transform: translateY(0); }
+        10% { transform: translateY(-4px); }
+        20% { transform: translateY(4px); }
+        30% { transform: translateX(-4px); }
+        40% { transform: translateX(6px); }
+        50% { transform: translateX(0); }
+        60% { transform: rotateZ(-4deg); }
+        70% { transform: rotateZ(4deg); }
+        80% { transform: translateX(-4px); }
+        90% { transform: translateX(4px); }
+  }
+  
+  

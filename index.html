@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/MM3.png" type="image/x-icon"/> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+    <title>Meta Magic</title>
+</head>
+<body>
+    <audio src=""></audio>
+    <header>
+        <h1>Meta Magic</h1>
+        <div id="intro">
+            SAUDAÇÕES!!!<br>
+            Você está prestes a presenciar a junção do paranormal com a tecnologia...<br>
+            CLICK abaixo , leia com atenção o enunciado a seguir, e então começaremos...
+        </div>
+        <div id="anima" onclick="showTime()">
+            <p>
+                "AO CLICAR AQUI PARA CONTINUAR, CERTIFIQUE-SE DE ESTAR CONCENTRADO!"
+            </p>
+        </div>
+        <footer id="fIntro">
+            &copy; By M.Gomes
+        </footer>
+    </header>
+    
+
+    <section>
+        <h1 id="shake">M M</h1>
+        <div id="display">
+            <label for="radio1">
+                <div id="deck1">
+                    <input type="radio" name="deck" id="radio1">
+                        <strong id="spades">A♠️ 2♠️ 3♠️ 4♠️ 5♠️ 6♠️ 7♠️</strong>
+                </div>
+            </label>
+            <label for="radio2">
+                <div id="deck2"> 
+                    <input type="radio" name="deck" id="radio2">
+                        <strong id="hts"><b>A♥️ 2♥️ 3♥️ 4♥️ 5♥️ 6♥️ 7♥️</b></strong>
+                </div>
+            </label>
+            <label for="radio3">
+                <div id="deck3">
+                    <input type="radio" name="deck" id="radio3">
+                        <strong id="clubs">A♣️ 2♣️ 3♣️ 4♣️ 5♣️ 6♣️ 7♣️</strong>
+                </div>
+            </label>
+            <p id="sentence">
+                "Deixe-me olhar pelo seus olhos e esteja onde estiver vou <strong>LER</strong> seus pensamentos..."
+            </p>
+            <p id="rules">
+                <strong>1°</strong> Memorize a carta<br>
+                <strong>2°</strong> Marque a linha<br>
+                <strong>3°</strong> Embaralhe com o botão. Vamos fazer iso algumas vezes, e assim que eu ler sua mente apresentarei a resposta!
+            </p>
+            <input type="button" id='button' value="Embaralhar" onclick="shuffle()">
+            <div id="solution"></div>  
+        </div>
+        <footer id="fOperation" onclick = "back()">
+            &copy; By M.Gomes
+        </footer>
+    </section>
+
+    <img src="assets/mmm.png" alt="mister M">
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
