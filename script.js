@@ -65,6 +65,10 @@ function shuffle(){
             button.style.boxShadow = '3px 3px yellow'
             button.value = "Clique AQUI, e comprovarei"
 
+            document.querySelector('#spades').innerHTML = `A♠️ 2♠️ 3♠️ 4♠️ 5♠️ 6♠️ 7♠️`
+            document.querySelector('#hts').innerHTML = `<b>A♥️ 2♥️ 3♥️ 4♥️ 5♥️ 6♥️ 7♥️</b>`
+            document.querySelector('#clubs').innerHTML = `A♣️ 2♣️ 3♣️ 4♣️ 5♣️ 6♣️ 7♣️`
+
             decks.forEach(deck => {
                 deck.remove()
             });
